@@ -2,6 +2,7 @@ require 'fileutils'
 require 'digest/md5'
 require 'redcarpet'
 require 'pygments'
+require 'active_support/all'
 
 PYGMENTS_CACHE_DIR = File.expand_path('../../_cache', __FILE__)
 FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)
@@ -29,6 +30,17 @@ class Redcarpet2Markdown < Redcarpet::Render::HTML
       File.open(path, 'w') {|f| f.print(content) }
       content
     end
+  end
+
+  def header(text, level)
+    if /{#(?<id>.*)}$/ =~ text
+      slug = id
+      text.gsub!(" {##{id}}", "")
+    else
+      slug = text.parameterize
+    end
+    anchor_tag = "<a name=\"#{slug}\" href=\"##{slug}\" class=\"anchor\">&para;</a>"
+    "<h#{level} id=\"#{slug}\">#{text}#{anchor_tag}</h#{level}>"
   end
 
   def xheader(text, level)
