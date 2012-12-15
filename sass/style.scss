@@ -1,0 +1,26 @@
+@import "./skeleton/base";
+@import "./skeleton/layout";
+@import "./skeleton/skeleton";
+
+@import "./pygments";
+
+p {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position:inside;
+}
+
+code {
+  font-family: monospace, "Monoco";
+}
+
+table {
+  width: 100%;
+
+  th {
+    font-weight: bold;
+  }
+}
