@@ -1,6 +1,6 @@
 source :rubygems
 
-#gem 'albino'
+gem 'activesupport'
 gem 'compass'
 gem 'foreman'
 gem 'jekyll'
