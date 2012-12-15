@@ -1,6 +1,6 @@
 markdown: redcarpet2
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables", "with_toc_data"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables"]
 
 pygments: true
 exclude: Gemfile*, Rakefile, config.rb, sass, README.md, Procfile
