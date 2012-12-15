@@ -24,3 +24,11 @@ table {
     font-weight: bold;
   }
 }
+
+a.anchor {
+  cursor: pointer;
+  color: #ececec;
+  text-decoration: none;
+  display: none;
+  padding-left: 10px;
+}
