@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog • BrianRacer.com
+title: Style Guide
 ---
 
 # Header 1
@@ -9,9 +9,9 @@ title: Blog • BrianRacer.com
 #### Header 4
 ##### Header 5
 
-## Markdown plus h2 with a custom ID ##         {#id-goes-here}
+## Markdown plus h2 with a custom ID {#custom-id}
 
-[Link back to H2](#id-goes-here)
+[Link back to H2](#custom-id)
 
 Test.
 
